@@ -28,8 +28,8 @@ def test_operations():
     immutable_time = time.perf_counter() - start_time
     immutable_time_ns = immutable_time * 10**9  # Convert to nanoseconds
 
-    print(f"Mutable Example Time: {mutable_time_ns:.4f} nano seconds")
-    print(f"Immutable Example Time: {immutable_time_ns:.4f} nano seconds")
+    print(f"Mutable Example Time: {mutable_time_ns:.2f} nano seconds")
+    print(f"Immutable Example Time: {immutable_time_ns:.2f} nano seconds")
     
 if __name__ == "__main__":
     test_operations()

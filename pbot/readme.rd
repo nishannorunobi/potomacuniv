@@ -8,17 +8,27 @@ python3 -m venv .venv
 added .venv under gitignore
 
 source .venv/bin/activate
-pip install streamlit
 
+
+pip install streamlit
+pip install streamlit requests
 
 pip freeze > requirements.txt
 
+
 git push
 
+streamlit run ui.py
+deactivate
 
 #########################
-Core services technology
+Core services technology - Fast API
+Initial scripts on my machine.
+-------------------------------------
+pip install fastapi uvicorn pydantic
 
+python backend.py
+deactivate
 
 
 ################################

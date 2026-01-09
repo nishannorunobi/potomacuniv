@@ -15,6 +15,13 @@ pip install streamlit requests
 
 pip freeze > requirements.txt
 
+After updating requirements.txt manually
+#########################################
+deactivate
+rm -rf .venv
+python3 -m venv .venv
+pip install -r requirements.txt 
+
 
 git push
 
@@ -37,3 +44,15 @@ deactivate
 LLM model used 
 
 
+
+Docker
+#####################
+sudo docker images
+docker image prune -a
+
+sudo docker compose build --no-cache
+sudo docker images
+
+sudo docker compose up --force-recreate
+sudo docker ps
+sudo docker compose down

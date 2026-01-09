@@ -21,4 +21,6 @@ COPY . .
 
 # Run the FastAPI app using the official CLI
 # It automatically chooses the best production settings
-CMD ["fastapi", "run", "backend.py", "--port", "8000"]
+#CMD ["fastapi", "run", "backend.py", "--port", "8000"]
+
+CMD ["uvicorn", "backend:app", "--host", "0.0.0.0", "--port", "8000"]

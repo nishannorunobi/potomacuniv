@@ -3,4 +3,6 @@
 .git
 **/.venv
 **/.dockerignore
+**/*.pyc
+**/__pycache__
 
